@@ -1,112 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Someone Special</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <title>Happy Girlfriend's Day ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      overflow: hidden;
+      background: #0f0c29;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    }
 
-        header {
-            padding: 3rem 1rem;
-            background: rgba(0, 0, 0, 0.5);
-        }
+    /* Heart animation */
+    .heart {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      background: red;
+      transform: rotate(45deg);
+      animation: floatHearts 10s infinite linear;
+    }
 
-        header h1 {
-            font-size: 3rem;
-            color: #ff8ba7;
-            margin-bottom: 0.5rem;
-            animation: fadeIn 2s ease-in-out;
-        }
+    .heart::before,
+    .heart::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: red;
+      position: absolute;
+      border-radius: 50%;
+    }
 
-        header p {
-            font-size: 1.2rem;
-            color: #f8c8dc;
-            animation: fadeIn 3s ease-in-out;
-        }
+    .heart::before {
+      top: -5px;
+      left: 0;
+    }
 
-        .heart {
-            font-size: 3rem;
-            color: #ff4b5c;
-            animation: pulse 1.5s infinite;
-        }
+    .heart::after {
+      left: -5px;
+      top: 0;
+    }
 
-        section {
-            padding: 2rem 1rem;
-        }
+    @keyframes floatHearts {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
 
-        .message {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+    .letter-container {
+      position: relative;
+      z-index: 10;
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      margin-top: 50px;
+      text-align: center;
+    }
 
-        footer {
-            padding: 2rem;
-            font-size: 0.9rem;
-            color: #aaa;
-        }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #ff8da1;
+    }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+    p {
+      font-size: 1.2em;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="heart">🥰</div>
-        <h1>Hi, HIYA</h1>
-        <p>This little page is just for you 🌙</p>
-    </header>
+  <!-- Animated hearts -->
+  <script>
+    const numberOfHearts = 60;
+    for (let i = 0; i < numberOfHearts; i++) {
+      let heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+      heart.style.opacity = Math.random();
+      document.body.appendChild(heart);
+    }
+  </script>
 
-    <section>
-        <div class="message">
-            <p>
-                This page may be simple, but it's made with genuine affection.
-            </p>
-            <p>
-                Hi HIYA,
+  <!-- Letter content -->
+  <div class="letter-container">
+    <h1>Happy Girlfriend's Day ❤️</h1>
+    <p>Hey my love,</p>
+    <p>
+      On this special day, I just want to remind you how much you mean to me. I love the way you smile at the smallest things, how your laughter lights up even my darkest days, and how your heart is the warmest place I’ve ever known.
+    </p>
+    <p>
+     
+    </p>
+    <p>
+      I promise to always support your dreams, be your biggest cheerleader, and love you Forever . No matter where life takes us, my heart will always find its way to you.
+    </p>
+    <p>
+      Forever yours,I love you my angel<br>
+      ❤️ [VANSH]
+    </p>
+  </div>
 
-
-I just wanted to write a little note to tell you something I’ve been thinking for a while.
-
-You are honestly one of the kindest people I’ve ever met. The way you treat others with respect and care really stands out. You always seem to know how to make people feel comfortable and happy, and that’s a very special thing.
-
-Also, I just want to say—you have a beautiful smile and a really warm energy. You don’t even have to try too hard; it just comes naturally from you. You make the space around you feel brighter.
-
-I admire the way you carry yourself, how kind you are, and how you stay true to who you are. I thought you should know that people notice these things—even if they don’t always say them out loud.
-
-Wishing you all the good things,
-
-
-
-            </p>
-            <p style="color:#f8c8dc; margin-top: 1rem;">— Vansh who truly admires you 💌</p>
-        </div>
-    </section>
-
-    <footer>
-        Made with 💖 just for you | &copy; 2025
-    </footer>
-<a href="https://www.Hiya_vansh.com" target="_blank" title="Go to OpenAI">OpenAI Website</a>
 </body>
 </html>
